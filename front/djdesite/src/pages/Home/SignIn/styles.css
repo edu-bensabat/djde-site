@@ -1,0 +1,82 @@
+body {
+    background: rgb(127, 127, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container {
+    display: flex;
+}
+
+.signin-block {
+    margin-top: 70px;
+    min-height: 400px; 
+    width: 500px;
+    background: black;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.block-title {
+    color: white;
+    font-size: 20px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    height: 100%; 
+}
+
+.form-box input {
+    padding: 9px;
+    margin-bottom: 10px; 
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #444;
+    color: #eee;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: 1px solid #444;
+    font-family: "Bebas";
+    width: 150px;
+}
+
+.signin-button {
+    background: #E48A00;
+    width: 140px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 23px;
+    align-self: center;
+    border: 1px solid black;
+    font-size: 22px;
+    color: black;
+    font-family: "Bebas";
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.signin-button:hover {
+    background-color: #FFA700;
+}
+
+
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
