@@ -1,0 +1,263 @@
+/****************************/
+/* GENERAL CSS */
+/****************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*font-size: 10px;*/
+  /* 10px / 16px = 62.5%*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /*margin-bottom: 9.6rem;*/
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #f2b457;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.flex {
+  padding-left: 3rem;
+  display: flex;
+  gap: 3rem;
+  padding-top: 1.8rem;
+}
+
+/****************************/
+/* HEADER */
+/****************************/
+
+.background {
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../../imgs/background.jpeg");
+  background-size: cover;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+/****************************/
+/* NAVEGATION */
+/****************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #F2B457;
+}
+
+.flex-icon {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/****************************/
+/* HERO SECTION */
+/****************************/
+
+.section-hero {
+  padding: 4.8rem 0 4.8rem 0;
+}
+
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero-img {
+  width: 45%;
+}
+
+/****************************/
+/* CTA SECTION */
+/****************************/
+.section-cta {
+  padding: 0rem 0 4.8rem 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); */
+}
+
+.coisa:link,
+.coisa:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.coisa:hover,
+.coisa:active {
+  color: #F2B457;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+/****************************/
+/* HERO GAME */
+/****************************/
+
+.section-game {
+  padding: 4.8rem 0 4.8rem 0;
+}
+
+.game {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.game-title {
+  font-size: 4.6rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.grid-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.jogos-painel {
+  padding: 10rem;
+  background-color: #0aa378;
+  border-radius: 16px;
+}
