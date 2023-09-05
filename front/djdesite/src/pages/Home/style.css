@@ -1,57 +1,48 @@
-/****************************/
-/* GENERAL CSS */
-/****************************/
+/******************************/
+/* ESTILOS GERAIS */
+/******************************/
 
-* {
+.home-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  /*font-size: 10px;*/
-  /* 10px / 16px = 62.5%*/
   font-size: 62.5%;
-}
-
-body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
 
-.container {
+
+
+.container-home {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
-.grid {
+
+.grid-home {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-
-  /*margin-bottom: 9.6rem;*/
 }
 
-.btn,
-.btn:link,
-.btn:visited {
+.button-home,
+.button-home:link,
+.button-home:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-
   border: none;
   cursor: pointer;
-
   transition: all 0.3s;
 }
 
-.btn--form {
+.button--form-home {
   background-color: #f2b457;
   color: #fdf2e9;
   align-self: end;
@@ -60,36 +51,33 @@ body {
   padding-right: 4rem;
 }
 
-.btn--form:hover {
+.button--form-home:hover {
   background-color: #fff;
   color: #555;
 }
 
-.flex {
+.flex-home {
   padding-left: 3rem;
   display: flex;
   gap: 3rem;
   padding-top: 1.8rem;
 }
 
-/****************************/
-/* HEADER */
-/****************************/
+/******************************/
+/* CABEÇALHO */
+/******************************/
 
-.background {
-  height: 100vh;
-  position: relative;
-
+.background-home {
+  
   background-image: linear-gradient(
-      rgba(34, 34, 34, 0.6),
-      rgba(34, 34, 34, 0.6)
-    ),
-    url("../../imgs/background.jpeg");
+    rgba(34, 34, 34, 0.6),
+    rgba(34, 34, 34, 0.6)
+  ), url("../../imgs/background.jpeg");
   background-size: cover;
   color: #fff;
 }
 
-.header {
+.header-home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,19 +85,19 @@ body {
   padding: 0 4.8rem;
 }
 
-/****************************/
-/* NAVEGATION */
-/****************************/
+/******************************/
+/* NAVEGAÇÃO */
+/******************************/
 
-.main-nav-list {
+.main-nav-list-home {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 4.2rem;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-nav-link-home:link,
+.main-nav-link-home:visited {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -118,81 +106,82 @@ body {
   transition: all 0.3s;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #F2B457;
+.main-nav-link-home:hover,
+.main-nav-link-home:active {
+  color: #f2b457;
 }
 
-.flex-icon {
+.flex-icon-home {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-/****************************/
-/* HERO SECTION */
-/****************************/
+/******************************/
+/* SEÇÃO DE HERÓI */
+/******************************/
 
-.section-hero {
+.section-hero-home {
   padding: 4.8rem 0 4.8rem 0;
 }
 
-.hero-img-box {
+.hero-img-box-home {
   display: flex;
   justify-content: center;
 }
 
-.hero {
+.hero-home {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
-.hero-img {
+.hero-img-home {
   width: 45%;
 }
 
-/****************************/
-/* CTA SECTION */
-/****************************/
-.section-cta {
+/******************************/
+/* SEÇÃO CTA */
+/******************************/
+
+.section-cta-home {
   padding: 0rem 0 4.8rem 0;
 }
 
-.cta {
+.cta-home {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
 
-.cta-text-box {
+.cta-text-box-home {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   color: #fff;
   display: flex;
   align-items: center;
 }
 
-.cta-text {
+.cta-text-home {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 4.8rem;
 }
 
-.cta-form {
+.cta-form-home {
   display: flex;
   gap: 3.2rem;
 }
 
-.cta-form label {
+.cta-form-home label {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
 
-.cta-form input,
-.cta-form select {
+.cta-form-home input,
+.cta-form-home select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -203,17 +192,16 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.cta-form input::placeholder {
+.cta-form-home input::placeholder {
   color: #aaa;
 }
 
 .cta *:focus {
   outline: none;
-  /* box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5); */
 }
 
-.coisa:link,
-.coisa:visited {
+.link-home:link,
+.link-home:visited {
   display: inline-block;
   text-decoration: none;
   color: #fff;
@@ -222,42 +210,11 @@ body {
   transition: all 0.3s;
 }
 
-.coisa:hover,
-.coisa:active {
-  color: #F2B457;
+.link-home:hover,
+.link-home:active {
+  color: #f2b457;
 }
 
-.label {
+.label-home {
   margin-bottom: 5px;
-}
-/****************************/
-/* HERO GAME */
-/****************************/
-
-.section-game {
-  padding: 4.8rem 0 4.8rem 0;
-}
-
-.game {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.game-title {
-  font-size: 4.6rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.grid-game {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3rem;
-}
-
-.jogos-painel {
-  padding: 10rem;
-  background-color: #0aa378;
-  border-radius: 16px;
 }

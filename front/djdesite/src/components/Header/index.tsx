@@ -9,18 +9,18 @@ export default function Header() {
           <div className="flex-icon">
             <img src={House} alt="home icon" />
             <li>
-              <a href="#" className="main-nav-link">
+              <a href="/" className="main-nav-link">
                 Home
               </a>
             </li>
           </div>
           <li>
-            <a href="#" className="main-nav-link">
+            <a href="/games" className="main-nav-link">
               Jogos
             </a>
           </li>
           <li>
-            <a href="#" className="main-nav-link">
+            <a href="/signin" className="main-nav-link">
               Registrar
             </a>
           </li>

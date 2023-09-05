@@ -1,4 +1,5 @@
 const Auth = require("../config/Auth");
+const User = require("../models/User");
 
 {/*async function create (req, res) {
     try {
@@ -29,7 +30,7 @@ const Auth = require("../config/Auth");
 
 async function login(req, res) {
     try {
-        const user = await User.findOne({ where: { email: req.body.email } })
+        const user = await User.findOne({ where: { name: req.body.name } })
         if (!user) {
             return res.status(404).json({ message: 'Usuário não cadastrado.' });
         }
